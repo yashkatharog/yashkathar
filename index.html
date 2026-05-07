@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Kathar</title>
+
     <style>
         body {
             font-family: Arial;
@@ -10,21 +12,26 @@
             color: white;
             text-align: center;
         }
+
         header {
             padding: 50px;
             background: #1e293b;
         }
+
         h1 {
             margin: 0;
             font-size: 40px;
         }
+
         p {
             font-size: 18px;
             color: #cbd5e1;
         }
+
         section {
             padding: 40px;
         }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -32,7 +39,62 @@
             color: black;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 15px;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* 🔥 PROJECTS FLEX */
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 220px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 📱 MOBILE DESIGN */
+        @media (max-width: 768px) {
+
+            header {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            .btn {
+                display: block;
+                width: 80%;
+                margin: 10px auto;
+            }
+
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -42,8 +104,9 @@
 <header>
     <h1>Hey, I'm Yash 🚀</h1>
     <p>Product Designer | Building cool stuff</p>
+
     <a href="mailto:your@email.com" class="btn">Contact Me</a>
-    <a href="http://www.linkedin.com/in/yashkathar" class="btn" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/yashkathar" class="btn" target="_blank">LinkedIn</a>
 </header>
 
 <section>
@@ -53,7 +116,25 @@
 
 <section>
     <h2>My Work</h2>
-    <p>Projects coming soon 👀</p>
+
+    <div class="projects">
+
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Add your real project here</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Add your real project here</p>
+        </div>
+
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>Add your real project here</p>
+        </div>
+
+    </div>
 </section>
 
 </body>
